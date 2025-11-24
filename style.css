@@ -1,85 +1,122 @@
-@font-face {
-    font-family: 'WorkSans';
-    src: url(WorkSans-Bold.ttf);
-}
-
-@font-face {
-    font-family: 'WorkSansRegular';
-    src: url(WorkSans-Regular.ttf);
-}
-
 *{
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
-body{
-    background-image: url(background-pattern-desktop.svg);
-    background-repeat: no-repeat;
+@font-face {
+    font-family: 'WorkSans-Bold';
+    src: url(assets/fonts/static/WorkSans-Bold.ttf);
 }
 
-button:hover{
+@font-face {
+    font-family: 'WorkSans-Regular';
+    src: url(assets/fonts/static/WorkSans-Regular.ttf);
+}
+
+body{
+    background-image: url(assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: #f9eeff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 32px; 
+}
+
+main{
+    width: 550px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);
+    height: auto;
+    max-width: 95vw;
+    border-radius: 15px;
+}
+
+header{
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.starIcon{
+    width: 35px;
+}
+
+h1{
+    font-family: 'WorkSans-Bold';
+    color: #311435;
+    font-size: 2.5rem;
+}
+
+section{
+    padding-left: 5px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 1px solid rgb(230, 227, 227);
+}
+
+h2{
+    font-size: 0.9rem;
+    font-family: 'WorkSans-Bold';
+}
+
+h2:hover{
+    cursor: pointer;
+    color: #b024e4;
+}
+
+.questionsAndIcon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.lastSection{
+    border: none;
+}
+
+button{
+    background: transparent;
+    border: none;
     cursor: pointer;
 }
 
-#divPrincipal{
-    position: relative;
-    background-color: rgb(255, 255, 255);
-    width: 35vw;
-    height: 65vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20vh;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
+p{
+    width: 80%;
+    font-family: 'WorkSans-Regular';
+    font-size: 0.8rem;
+    color: rgb(41, 40, 40);
+    line-height: 20px;
+    display: none;
 }
 
-#star{
-    position: absolute;
-    display: inline-block;
-    left: 30px;
-    top: 50px;
-}
+@media screen and (max-width: 500px) {
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px; 
+  }
 
-#faq{
-    display: inline-block;
-    margin-left: 8vw;
-    margin-top: 35px;
-    font-size: 50px;
-    font-family: 'WorkSans';
-    color: #2b142f;
-}
+  main{
+    width: 95vw;
+  }
 
+  h2 {
+    width: 65vw;
+  }
 
-#p1{
-    position: absolute;
-    left: 20px;
-    top: 20vh;
-    font-family: 'WorkSans';
-    padding-bottom: 20px;
-    color: #2b142f;
-   
-}
+  p{
+    width: 90%;
+  }
 
-#icon1{
-    position: absolute;
-    right: 20px;
-    top: 19vh;
-    
-}
-
-
-#answer{
-    margin-top: 65px;
-    margin-left: 20px;
-    padding-bottom: 10px;
-   /* display: none; */
-   border-bottom: 1px solid rgb(192, 189, 189);
-   line-height: 25px;
-   font-family: 'WorkSansRegular';
-   font-size: 13px;
- 
 
 }
-
