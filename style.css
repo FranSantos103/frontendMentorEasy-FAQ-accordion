@@ -22,7 +22,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 32px; 
+    padding-bottom: 30px;
 }
 
 main{
@@ -103,7 +103,6 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 60px; 
   }
 
   main{
